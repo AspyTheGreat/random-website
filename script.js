@@ -605,6 +605,14 @@ function displayItems() {
         source.textContent = 'Source: ' + item.source;
         itemDiv.appendChild(source);
 
+        let rarity = document.createElement('p');
+        rarity.textContent = 'Rarity: ' + item.rarity;
+        itemDiv.appendChild(rarity);
+
+        let entries = document.createElement('p');
+        entries.textContent = 'Entries: ' + item.entries;
+        itemDiv.appendChild(entries);
+
         // Add more fields as needed
 
         container.appendChild(itemDiv);
