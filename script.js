@@ -586,6 +586,17 @@ let itemsData = {
         "This soft cloth shimmers with a faint glitter. As part of a long or short rest, you can infuse this cloth with a simple or martial weapon, applying the enchantment to the weapon's attack and a damage rolls."
       ],
       "source": "AspysGuidetoInfinitum"
+    },
+        {
+      "name": "Enchantment Fabric +3",
+      "wondrous": true,
+      "tier": "major",
+      "rarity": "very rare",
+      "weight": 0.5,
+      "entries": [
+        "This soft cloth shimmers with a faint glitter. As part of a long or short rest, you can infuse this cloth with a simple or martial weapon, applying the enchantment to the weapon's attack and a damage rolls."
+      ],
+      "source": "AspysGuidetoInfinitum"
     }
     ]
 };
@@ -608,6 +619,10 @@ function displayItems() {
         let rarity = document.createElement('p');
         rarity.textContent = 'Rarity: ' + item.rarity;
         itemDiv.appendChild(rarity);
+
+        let weight = document.createElement('p');
+        weight.textContent = 'Weight: ' + item.weight;
+        itemDiv.appendChild(weight);
 
         let entries = document.createElement('p');
         entries.textContent = 'Entries: ' + item.entries;
