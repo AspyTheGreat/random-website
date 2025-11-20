@@ -621,7 +621,7 @@ function displayItems() {
         itemDiv.appendChild(rarity);
 
         let weight = document.createElement('p');
-        weight.textContent = 'Weight: ' + item.rarity;
+        weight.textContent = 'Weight: ' + item.weight;
         itemDiv.appendChild(weight);
 
         let entries = document.createElement('p');
