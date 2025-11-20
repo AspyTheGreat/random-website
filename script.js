@@ -609,6 +609,10 @@ function displayItems() {
         rarity.textContent = 'Rarity: ' + item.rarity;
         itemDiv.appendChild(rarity);
 
+        let weight = document.createElement('p');
+        weight.textContent = 'Weight: ' + item.rarity;
+        itemDiv.appendChild(weight);
+
         let entries = document.createElement('p');
         entries.textContent = 'Entries: ' + item.entries;
         itemDiv.appendChild(entries);
