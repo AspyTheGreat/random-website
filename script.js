@@ -597,6 +597,16 @@ let itemsData = {
         "This soft cloth shimmers with a faint glitter. As part of a long or short rest, you can infuse this cloth with a simple or martial weapon, applying the enchantment to the weapon's attack and a damage rolls."
       ],
       "source": "AspysGuidetoInfinitum"
+    }, {
+      "name": "Enchantment Fabric +4",
+      "wondrous": true,
+      "tier": "major",
+      "rarity": "Legendary",
+      "weight": 0.5,
+      "entries": [
+        "This soft cloth shimmers with a faint glitter. As part of a long or short rest, you can infuse this cloth with a simple or martial weapon, applying the enchantment to the weapon's attack and a damage rolls."
+      ],
+      "source": "AspysGuidetoInfinitum"
     }
     ]
 };
