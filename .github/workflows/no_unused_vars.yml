@@ -1,0 +1,31 @@
+name: PR – No Unused JS Variables
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - "**/*.js"   # only run when JS files change
+
+jobs:
+  lint-unused-vars:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # We install ESLint just for this workflow; your repo
+      # doesn't need to be a Node project.
+      - name: Install ESLint
+        run: npm install eslint@8
+
+      - name: Fail if there are unused variables
+        run: |
+          npx eslint "**/*.js" \
+            --no-eslintrc \
+            --rule 'no-unused-vars:error'
