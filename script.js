@@ -1,4 +1,6 @@
 // Assuming the JSON data is assigned to a variable named `itemsData`
+
+
 let itemsData = {
     "item": [
         {
