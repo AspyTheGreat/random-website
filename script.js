@@ -625,6 +625,9 @@ let itemsData = {
 };
 
 function displayItems() {
+    let test_variable = 45;
+    let missing_semi = 10
+    let sum = number1 + number2;
     const container = document.getElementById('items-container');
     itemsData.item.forEach(item => {
         let itemDiv = document.createElement('div');
