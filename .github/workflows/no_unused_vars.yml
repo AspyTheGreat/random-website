@@ -26,5 +26,5 @@ jobs:
 
       - name: Fail if there are unused variables
         run: |
-          npx eslint "**/*.js" --max-warnings=0
+          npx eslint "**/*.js" --max-warnings=0 --fix
   
