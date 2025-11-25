@@ -26,6 +26,9 @@ jobs:
 
       - name: Fail if there are unused variables
         run: |
-          npx eslint "**/*.js" \
-            --no-eslintrc \
-            --rule 'no-unused-vars:error'
+              npx eslint "**/*.js" \
+              --no-eslintrc \
+              --parser-options=ecmaVersion:2021 \
+              --env browser \
+              --rule 'no-unused-vars:error'
+  
