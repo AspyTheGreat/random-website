@@ -625,10 +625,10 @@ let itemsData = {
 };
 
 function displayItems() {
-    let test_variable = 45;
-    let missing_semi = 10;
-    let sum = test_variable + missing_semi;
-    console.log(sum);
+    //let test_variable = 45;
+    //let missing_semi = 10;
+    //let sum = number1 + number2;
+    //console.log(sum);
     const container = document.getElementById('items-container');
     itemsData.item.forEach(item => {
         let itemDiv = document.createElement('div');
