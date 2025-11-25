@@ -1,4 +1,6 @@
 // Assuming the JSON data is assigned to a variable named `itemsData`
+let unused_items_data = {"Some text":"Some more test"};
+
 let itemsData = {
     "item": [
         {
@@ -623,6 +625,7 @@ let itemsData = {
 };
 
 function displayItems() {
+    let unusediv = document.getElementById('items-container');
     const container = document.getElementById('items-container');
     itemsData.item.forEach(item => {
         let itemDiv = document.createElement('div');
