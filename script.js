@@ -1,5 +1,5 @@
 // Assuming the JSON data is assigned to a variable named `itemsData`
-let unused_items_data = {"Some text":"Some more test"};
+
 
 let itemsData = {
     "item": [
